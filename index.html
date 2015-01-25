@@ -22,6 +22,7 @@
     <![endif]-->
   </head>
   <body>
+    <div class="container mian">
      <!-- Navbar-->
      <nav class="navbar navbar-default" role="navigation">
       <div class="container">
@@ -53,36 +54,26 @@
             </li>
           </ul>
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="#">Sign In</a></li>
-             <div class="wrapper">
-              <form class="form-signin" method="POST" action="check_login.php">       
-                <h2 class="form-signin-heading">Please login</h2><hr/>
-                <input type="text" class="form-control" name="uname" placeholder="Username" required autofocus/>
-                <input type="password" class="form-control" name="pword" placeholder="Password" required/>     
-                <button class="btn btn-lg btn-primary btn-block" type="submit" name="submit">Login</button>   
-              </form>
-            </div>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Sign In</a>
+              <ul class="dropdown-menu dmlogin" role="menu">
+                <div class="wrapper">
+                  <form class="form-signin" method="POST" action="check_login.php">
+                    <h2 class="form-signin-heading">Please login</h2><hr/>
+                    <input type="text" class="form-control" name="uname" placeholder="Username" required autofocus/>
+                    <input type="password" class="form-control" name="pword" placeholder="Password" required/>
+                    <button class="btn btn-lg btn-primary btn-block" type="submit" name="submit">Login</button>
+                  </form>
+                </div>
+              </ul>
+            </li>
           </ul>
         </div>
       </div>
     </nav><!--navbar-->
 
-    <div class="container">
-      <div class="col-md-2">
-        <ul id="leftCol" class="list-group ">
-          <a class="list-group-item active" href="#home">Home</a>
-          <a class="list-group-item" href="#home">Home</a>
-          <a class="list-group-item" href="#home">Home</a>
-          <a class="list-group-item" href="#home">Home</a>
-          <a class="list-group-item" href="#home">Home</a>          
-        </ul>
-      </div>
-      <div id="contentCol" class="col-md-10 clearfix">
-        
-      </div>
-    </div>
-   
 
+    </div>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>

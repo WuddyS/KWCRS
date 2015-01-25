@@ -1,10 +1,10 @@
 body {
-  background: #eee !important;
+  background: #f3f3f3 !important;
 }
-
-.wrapper {
-  margin-top: 80px;
-  margin-bottom: 80px;
+.mian{
+  background: #ffffff !important;
+  min-width: 90%;
+  min-height: 100%;
 }
 
 .form-signin {
@@ -12,7 +12,6 @@ body {
   padding: 15px 35px 45px;
   margin: 0 auto;
   background-color: #fff;
-  border: 1px solid rgba(0, 0, 0, 0.1);
 }
 .form-signin .form-signin-heading,
 .form-signin .checkbox {
@@ -27,8 +26,8 @@ body {
   height: auto;
   padding: 10px;
   -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
 }
 .form-signin .form-control:focus {
   z-index: 2;
@@ -42,4 +41,7 @@ body {
   margin-bottom: 20px;
   border-top-left-radius: 0;
   border-top-right-radius: 0;
+}
+.dmlogin{
+  min-width: 300px;
 }
