@@ -6031,7 +6031,7 @@ button.close {
     left: 20%;
     padding-bottom: 30px;
   }
-  .s {
+  .carousel-indicators {
     bottom: 20px;
   }
 }
