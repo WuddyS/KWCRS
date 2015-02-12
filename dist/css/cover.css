@@ -1,6 +1,6 @@
 /*
-* Globals
-*/
+ * Globals
+ */
 
 /* Links */
 a,
@@ -21,8 +21,8 @@ a:hover {
 
 
 /*
-* Base structure
-*/
+ * Base structure
+ */
 
 html,
 body {
@@ -36,19 +36,19 @@ body {
 }
 
 /* Extra markup and styles for table-esque vertical and horizontal centering */
-.main-wrapper {
+.site-wrapper {
   display: table;
   width: 100%;
   height: 100%; /* For at least Firefox */
   min-height: 100%;
   -webkit-box-shadow: inset 0 0 100px rgba(0,0,0,.5);
-  box-shadow: inset 0 0 100px rgba(0,0,0,.5);
+          box-shadow: inset 0 0 100px rgba(0,0,0,.5);
 }
-.main-wrapper-inner {
+.site-wrapper-inner {
   display: table-cell;
   vertical-align: top;
 }
-.main-container {
+.cover-container {
   margin-right: auto;
   margin-left: auto;
 }
@@ -60,12 +60,8 @@ body {
 
 
 /*
-* Header
-*/
-.logo{
-  font-family: monospace;
-  font-weight: bold;
-}
+ * Header
+ */
 .masthead-brand {
   margin-top: 10px;
   margin-bottom: 10px;
@@ -110,17 +106,21 @@ body {
 
 
 /*
-* Cover
-*/
+ * Cover
+ */
 
 .cover {
-  min-height: 100%;
-  border-color: 2px #fff;
+  padding: 0 20px;
+}
+.cover .btn-lg {
+  padding: 10px 20px;
+  font-weight: bold;
 }
 
+
 /*
-* Footer
-*/
+ * Footer
+ */
 
 .mastfoot {
   color: #999; /* IE8 proofing */
@@ -129,12 +129,12 @@ body {
 
 
 /*
-* Affix and center
-*/
+ * Affix and center
+ */
 
 @media (min-width: 768px) {
   /* Pull out the header and footer */
-  .navhead-box {
+  .masthead {
     position: fixed;
     top: 0;
   }
@@ -143,49 +143,21 @@ body {
     bottom: 0;
   }
   /* Start the vertical centering */
-  .main-wrapper-inner {
+  .site-wrapper-inner {
     vertical-align: middle;
   }
   /* Handle the widths */
-  .navhead-box,
+  .masthead,
   .mastfoot,
-  .main-container {
+  .cover-container {
     width: 100%; /* Must be percentage or pixels for horizontal alignment */
   }
 }
 
 @media (min-width: 992px) {
-  .navhead-box,
+  .masthead,
   .mastfoot,
-  .main-container {
-    width: 800px;
+  .cover-container {
+    width: 700px;
   }
 }
-/* CUSTOMIZE THE CAROUSEL
--------------------------------------------------- */
-
-/* Carousel base class */
-.carousel {
-  height: 100%;
-  margin-bottom: 0px;
-}
-/* Since positioning the image, we need to help out the caption */
-.carousel-caption {
-  z-index: 1;
-}
-
-/* Declare heights because of positioning of img element */
-.carousel .item {
-  height: 450px;
-  background-color: #d0d0d0;
-}
-.carousel-inner > .item > img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  min-width: 100%;
-  height: 100%;
-}
-/*
-  Form Signin................
-*/
